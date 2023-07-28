@@ -1,4 +1,5 @@
 @use "sass:math";
+
 // px to rem function
 @function rem($px, $context: 16) {
     @return (math.div($px, $context)) * 1rem;

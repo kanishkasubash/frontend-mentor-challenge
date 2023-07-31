@@ -1,0 +1,11 @@
+@use '../utils/' as *;
+
+.container {
+    padding: 0 rem(25);
+    max-width: rem(110);
+    margin: 0 auto;
+
+    @include largerscreen(large) {
+        padding: 0;
+    }
+}

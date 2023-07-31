@@ -14,14 +14,14 @@ $screens-less: (
   "large": "87.4375em",
 );
 
-// On larger screens that are 640px, 1024px, 1400px or higher
+// set min-width
 @mixin largerscreen($size) {
   @media (min-width: map-get($screens-higher, $size)) {
     @content;
   }
 }
 
-// On smaller screens that are 639px, 1023px, 1399px or less
+// set max-width
 @mixin smallerscreen($size) {
   @media (max-width: map-get($screens-less, $size)) {
     @content;

@@ -53,9 +53,9 @@ function browserSync() {
 }
 
 // browserSyncReload
-function browserSyncReload(callback) {
+function browserSyncReload(cb) {
     browsersync.reload();
-    callback();
+    cb();
 }
 
 // style task: compiles SCSS to CSS and put final main.min.css file into build/css folder
@@ -123,9 +123,9 @@ function images() {
 
 // watchFiles task: watch change(s) of HTML, SCSS and JS files.
 function watchFiles() {
-    watch(paths.styles.src, series(style, browserSyncReload));
-    watch(paths.scripts.src, series(script, browserSyncReload));
     watch(paths.htmls.src, series(html, browserSyncReload));
+    watch(paths.styles.src, series(style, browserSyncReload));
+    watch(paths.scripts.src, series(script, browserSyncReload));    
     watch(paths.images.src, series(images, browserSyncReload));
 }
 

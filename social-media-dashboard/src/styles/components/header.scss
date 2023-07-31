@@ -1,0 +1,17 @@
+@use '../utils/' as *;
+
+.header {
+
+    @include deviceup(mobile) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+
+    }
+
+    &__toggle {
+
+    }
+}

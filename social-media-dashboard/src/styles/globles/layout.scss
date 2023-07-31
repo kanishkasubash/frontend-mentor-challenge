@@ -3,9 +3,9 @@
 .container {
     padding: 0 rem(25);
     max-width: rem(1110);
-    margin: 0 auto;
+    margin: 0 auto rem(46);
 
-    @include deviceup(desktop) {
+    @include breakpoint(desktop) {
         padding: 0;
     }
 }

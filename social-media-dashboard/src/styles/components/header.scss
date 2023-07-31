@@ -1,17 +1,31 @@
 @use '../utils/' as *;
 
 .header {
+    margin-top: rem(36);
 
-    @include deviceup(mobile) {
+    @include breakpoint(mobile) {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
-    &__title {
-
+    &__subtitle {
+        font-size: rem(14);
+        font-weight: 700;
+        color: var(--dark-text);
     }
 
     &__toggle {
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: rem(5);
+        margin-bottom: rem(10);
+        span {
+            font-size: rem(14);
+            font-weight: 700;
+            color: var(--dark-text);
+            padding-right: rem(10);
+        }
     }
 }

@@ -7,18 +7,19 @@ $breakpoint: (
 );
 
 /* Extra small devices (phones, 640px and down) */
-@mixin devicedown($name) {
-  @media (max-width: map-get($breakpoint, $name)) {
-    @content;
-  }
-}
-
 /* Small devices (portrait tablets and large phones, 640px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@mixin deviceup($name) {
+
+@mixin breakpoint($name) {
   @media (min-width: map-get($breakpoint, $name)) {
+    @content;
+  }
+}
+
+@mixin breakpointdown($name) {
+  @media (max-width: map-get($breakpoint, $name)) {
     @content;
   }
 }

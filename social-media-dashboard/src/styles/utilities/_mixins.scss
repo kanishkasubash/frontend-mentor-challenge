@@ -1,4 +1,5 @@
-@use 'breakpoints';
+@import 'breakpoints';
+
 
 @mixin respond-min($breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {

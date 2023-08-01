@@ -1,0 +1,11 @@
+/* Extra small devices (phones, 640px and down) */
+/* Small devices (portrait tablets and large phones, 640px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$breakpoints: (
+  "small": "40em",
+  "medium": "48em",
+  "large": "62em",
+  "xlarge": "75em",
+);

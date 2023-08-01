@@ -1,9 +1,9 @@
-@use '../utils/' as *;
+@use '../utilities/' as *;
 
 .header {
     margin-top: rem(36);
 
-    @include breakpoint(mobile) {
+    @include respond-min(small) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -19,13 +19,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: rem(22);
-    }
-
-    &__toggle__label {
-        font-size: rem(14);
-        font-weight: 700;
-        color: var(--dark-text);
-        padding-right: rem(12);
+        margin-bottom: rem(22);        
     }
 }

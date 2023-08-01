@@ -27,14 +27,14 @@
         left: rem(2);
         top: rem(3);
         border-radius: 50%;
-        transition: transform 0.2s linear;
+        transition: 0.4s;
     }
 
-    &__button:checked+&__background {
+    #toggle:checked ~ .toggle__background {
         background: linear-gradient(var(--toggle), var(--toggle));
     }
 
-    &__button:checked+&__background &__slider {
+    #toggle:checked ~ .toggle__background .toggle__slider {
         transform: translateX(rem(24));
         background-color: var(--light-bg);
     }

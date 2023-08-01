@@ -1,11 +1,16 @@
 @use '../utils/' as *;
 
 .toggle {
+    &__button {
+        opacity: 0;
+        position: absolute;
+    }
+
     &__background {
         background: linear-gradient(225deg, var(--toggle-bg-start), var(--toggle-bg-end));
-        width: rem(50);
-        height: rem(26);
-        border-radius: rem(50);
+        width: rem(48);
+        height: rem(24);
+        border-radius: rem(12);
         position: relative;
         padding: rem(5);
         cursor: pointer;
@@ -14,18 +19,13 @@
         align-items: center;
     }
 
-    &__button {
-        opacity: 0;
-        position: absolute;
-    }
-
     &__slider {
-        background-color: var(--dark-bg);
-        width: rem(22);
-        height: rem(22);
+        background-color: var(--dark-card-bg);
+        width: rem(18);
+        height: rem(18);
         position: absolute;
         left: rem(2);
-        top: rem(2);
+        top: rem(3);
         border-radius: 50%;
         transition: transform 0.2s linear;
     }

@@ -19,13 +19,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: rem(5);
-        margin-bottom: rem(10);
-        span {
-            font-size: rem(14);
-            font-weight: 700;
-            color: var(--dark-text);
-            padding-right: rem(10);
-        }
+        margin-bottom: rem(22);
+    }
+
+    &__toggle__label {
+        font-size: rem(14);
+        font-weight: 700;
+        color: var(--dark-text);
+        padding-right: rem(12);
     }
 }

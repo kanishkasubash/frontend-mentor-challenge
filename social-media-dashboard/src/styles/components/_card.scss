@@ -1,22 +1,95 @@
-@use '../utilities/' as *;
+@use "../utilities/" as *;
 
 .card {
+    background-color: var(--dark-card-bg);
+    color: var(--dark-text);
+    border-radius: rem(5);
+    text-align: center;
+    padding: rem(25);
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(28);
+    }
+
+    &--facebook {
+        border-top: rem(5) solid var(--facebook);
+    }
+
+    &--twitter {
+        border-top: rem(5) solid var(--twitter);
+    }
+
+    &--instagram {
+        border-top: rem(5) solid var(--instagram-start);
+    }
+
+    &--youtube {
+        border-top: rem(5) solid var(--youtube);
+    }
+
     &__icon {
+        margin-right: rem(8);
+    }
 
-        &--facebook {
-            
+    &__username {
+        font-size: rem(12);
+        font-weight: 700;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(25);
+    }
+
+    &__count {
+        color: var(--dark-text-white);
+        font-weight: 700;
+        line-height: 1;
+
+        &--followers {
+            font-size: rem(56);
+            margin-bottom: rem(4);
         }
 
-        &--twitter {
+        &--overview {
+            font-size: rem(36);
+        }
+    }
 
+    &__lable {
+        font-size: rem(12);
+        font-weight: 400;
+        letter-spacing: rem(5);
+        color: var(--dark-text);
+        text-transform: uppercase;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__icon {
+            margin-right: rem(6);
+        }
+    }
+
+    &__subscription {
+        font-size: rem(12);
+        font-weight: 700;
+
+        &--up {
+            color: var(--lime-green);
         }
 
-        &--instagram {
-
-        }
-
-        &--youtube {
-
+        &--down {
+            color: var(--bright-red);
         }
     }
 }

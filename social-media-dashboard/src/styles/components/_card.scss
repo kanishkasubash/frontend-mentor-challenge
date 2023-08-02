@@ -6,12 +6,20 @@
     border-radius: rem(5);
     text-align: center;
     padding: rem(25);
+    position: relative;
+    overflow: hidden;
 
     &__header {
         display: flex;
+        height: rem(20);
         justify-content: center;
         align-items: center;
+        margin-top: rem(5);
         margin-bottom: rem(28);
+
+        &--instagram {
+            margin-top: rem(10);
+        }
     }
 
     &--facebook {
@@ -23,7 +31,16 @@
     }
 
     &--instagram {
-        border-top: rem(5) solid var(--instagram-start);
+        &::before {
+            content: '';
+            width: 100%;
+            height: rem(5);
+            background: linear-gradient(to right, var(--instagram-start), var(--instagram-end));
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+        }
     }
 
     &--youtube {
@@ -32,6 +49,8 @@
 
     &__icon {
         margin-right: rem(8);
+        width: rem(20);
+        height: rem(20);
     }
 
     &__username {

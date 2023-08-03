@@ -7,15 +7,14 @@
     --instagram-start: hsl(37, 97%, 70%);
     --instagram-end: hsl(329, 70%, 58%);
     --youtube: hsl(348, 97%, 39%);
+    --attribution: hsl(228, 45%, 44%);
 
-    // Dark Theme
+    // Dark Theme toggle gradient colors
     --toggle-bg-start: hsl(210, 78%, 56%);
     --toggle-bg-end: hsl(146, 68%, 55%);
 
-    // Light Theme
+    // Light Theme toggle color
     --toggle: hsl(230, 22%, 74%);
-
-    // Neutral
 
     // Dark Theme
     --dark-bg: hsl(230, 17%, 14%);
@@ -33,6 +32,28 @@
     --light-text: hsl(228, 12%, 44%);
     --light-text-dark: hsl(230, 17%, 14%);
 
-    // Attribution
-    --attribution: hsl(228, 45%, 44%);
+    // Default Theme variables
+    --bg: var(--light-bg);
+    --top-bg-pattern: var(--light-top-bg);
+    --card-bg: var(--light-card-bg);
+    --card-bg-hover: var(--light-card-bg-hover);
+    --text-primary: var(--light-text);
+    --text-secondary: var(--light-text-dark);
+    --toggle-start: var(--toggle);
+    --toggle-end: var(--toggle);
+    --toggle-slider: var(--light-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: var(--dark-bg);
+        --top-bg-pattern: var(--dark-top-bg);
+        --card-bg: var(--dark-card-bg);
+        --card-bg-hover: var(--dark-card-bg-hover);
+        --text-primary: var(--dark-text);
+        --text-secondary: var(--dark-text-white);
+        --toggle-start: var(--toggle-bg-start);
+        --toggle-end: var(--toggle-bg-end);
+        --toggle-slider: var(--dark-card-bg);
+    }
 }

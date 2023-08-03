@@ -14,7 +14,7 @@
     }
 
     &__background {
-        background: linear-gradient(225deg, var(--toggle-bg-start), var(--toggle-bg-end));
+        background: linear-gradient(225deg, var(--toggle-start), var(--toggle-end));
         width: rem(48);
         height: rem(24);
         border-radius: rem(12);
@@ -27,7 +27,7 @@
     }
 
     &__slider {
-        background-color: var(--dark-card-bg);
+        background-color: var(--toggle-slider);
         width: rem(18);
         height: rem(18);
         position: absolute;

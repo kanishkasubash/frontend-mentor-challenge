@@ -1,7 +1,7 @@
 @use "../utilities/" as *;
 
 .card {
-    background-color: var(--dark-card-bg);
+    background-color: var(--card-bg);
     color: var(--dark-text);
     border-radius: rem(5);
     text-align: center;
@@ -10,7 +10,7 @@
     overflow: hidden;
 
     &:hover {
-        background-color: var(--dark-card-bg-hover);
+        background-color: var(--card-bg-hover);
     }
 
     &__header {
@@ -71,7 +71,7 @@
     }
 
     &__count {
-        color: var(--dark-text-white);
+        color: var(--text-secondary);
         font-weight: 700;
         line-height: 1;
 
@@ -90,7 +90,7 @@
         font-size: rem(12);
         font-weight: 400;
         letter-spacing: rem(5);
-        color: var(--dark-text);
+        color: var(--text-primary);
         text-transform: uppercase;
     }
 

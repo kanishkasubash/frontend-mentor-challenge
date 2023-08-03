@@ -6,7 +6,7 @@
         content: '';
         width: 100%;
         height: rem(230);
-        background: var(--dark-top-bg);
+        background: var(--top-bg-pattern);
         position: absolute;
         display: block;
         border-bottom-left-radius: rem(20);
@@ -19,6 +19,6 @@
     &__subtitle {
         font-size: rem(14);
         font-weight: 700;
-        color: var(--dark-text);
+        color: var(--text-primary);
     }
 }

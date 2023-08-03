@@ -9,6 +9,10 @@
     position: relative;
     overflow: hidden;
 
+    &:hover {
+        background-color: var(--dark-card-bg-hover);
+    }
+
     &__header {
         display: flex;
         height: rem(20);

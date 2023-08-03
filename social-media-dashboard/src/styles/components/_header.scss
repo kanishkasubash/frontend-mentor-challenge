@@ -1,24 +1,24 @@
 @use '../utilities/' as *;
 
 .header {
-    margin-top: rem(36);
 
-    @include respond-min(small) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &::before {
+        content: '';
+        width: 100%;
+        height: rem(230);
+        background: var(--dark-top-bg);
+        position: absolute;
+        display: block;
+        border-bottom-left-radius: rem(20);
+        border-bottom-right-radius: rem(20);
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
     &__subtitle {
         font-size: rem(14);
         font-weight: 700;
         color: var(--dark-text);
-    }
-
-    &__toggle {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: rem(22);        
     }
 }

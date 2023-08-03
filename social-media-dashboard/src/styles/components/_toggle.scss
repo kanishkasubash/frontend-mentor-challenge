@@ -7,7 +7,7 @@
         color: var(--dark-text);
         margin-right: rem(13);
     }
-    
+
     &__button {
         opacity: 0;
         position: absolute;
@@ -24,6 +24,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &:hover {
+            background: linear-gradient(225deg, var(--toggle-bg-start), var(--toggle-bg-end));
+        }
     }
 
     &__slider {
@@ -35,13 +39,17 @@
         top: rem(3);
         border-radius: 50%;
         transition: 0.4s;
-    }    
-
-    #toggle:checked ~ .toggle__background {
-        background: linear-gradient(var(--toggle), var(--toggle));
     }
 
-    #toggle:checked ~ .toggle__background .toggle__slider {
+    #toggle:checked~.toggle__background {
+        background: linear-gradient(var(--toggle), var(--toggle));
+
+        &:hover {
+            background: linear-gradient(225deg, var(--toggle-bg-start), var(--toggle-bg-end));
+        }
+    }
+
+    #toggle:checked~.toggle__background .toggle__slider {
         transform: translateX(rem(24));
         background-color: var(--light-bg);
     }

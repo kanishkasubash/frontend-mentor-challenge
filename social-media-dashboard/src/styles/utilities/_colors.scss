@@ -57,3 +57,27 @@
         --toggle-slider: var(--dark-card-bg);
     }
 }
+
+body.dark-mode {
+    --bg: var(--dark-bg);
+    --top-bg-pattern: var(--dark-top-bg);
+    --card-bg: var(--dark-card-bg);
+    --card-bg-hover: var(--dark-card-bg-hover);
+    --text-primary: var(--dark-text);
+    --text-secondary: var(--dark-text-white);
+    --toggle-start: var(--toggle-bg-start);
+    --toggle-end: var(--toggle-bg-end);
+    --toggle-slider: var(--dark-card-bg);
+}
+
+body.light-mode {
+    --bg: var(--light-bg);
+    --top-bg-pattern: var(--light-top-bg);
+    --card-bg: var(--light-card-bg);
+    --card-bg-hover: var(--light-card-bg-hover);
+    --text-primary: var(--light-text);
+    --text-secondary: var(--light-text-dark);
+    --toggle-start: var(--toggle);
+    --toggle-end: var(--toggle);
+    --toggle-slider: var(--light-bg);
+}

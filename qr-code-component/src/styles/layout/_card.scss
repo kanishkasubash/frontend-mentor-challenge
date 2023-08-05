@@ -1,0 +1,8 @@
+@use '../utilities/' as *;
+
+.card {
+    max-width: rem(320);
+    background-color: var(--card-bg);
+    border-radius: rem(15);
+    text-align: center;
+}

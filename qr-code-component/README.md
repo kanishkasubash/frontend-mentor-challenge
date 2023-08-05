@@ -30,7 +30,7 @@ This is my first Frontend Mentor challenge coded in HTML and CSS. The card layou
 ### Links
 
 - Solution URL: [https://github.com/kanishkasubash/frontend-mentor-challenges/edit/main/qr-code-component](https://github.com/kanishkasubash/frontend-mentor-challenges/edit/main/qr-code-component/build)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://kanishkasubash.github.io/qr-code-component/](https://kanishkasubash.github.io/qr-code-component/)
 
 ## My process
 

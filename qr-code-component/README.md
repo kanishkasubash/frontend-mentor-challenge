@@ -157,7 +157,11 @@ flexible responsive layout that I want to continue focusing on in future project
 
 ### Useful resources
 
-- [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) - The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+- [When to use Flexbox and when to use CSS Grid](https://blog.logrocket.com/css-flexbox-vs-css-grid/#css-grid-layout-flexbox-alignment)
+- [Flexbox vs CSS Grid](https://www.youtube.com/watch?v=3elGSZSWTbM)
+- [Use fonts Locally](https://www.youtube.com/watch?v=zK-yy6C2Nck)
+- [Use fonts Locally](https://fontsource.org/fonts/outfit/install)
+- [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
 
 ## Author
 
@@ -171,3 +175,4 @@ I have got some inspirations from:
 
 - Jess Chan - [@TheCoderCoder](https://coder-coder.com/)
 - freecodecamp - [https://www.freecodecamp.org](https://www.freecodecamp.org/)
+- Aman Singh Bhogal - [https://www.frontendmentor.io/profile/asbhogal](https://www.frontendmentor.io/profile/asbhogal)

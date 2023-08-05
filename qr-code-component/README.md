@@ -47,14 +47,12 @@ This is my first Frontend Mentor challenge coded in HTML and CSS. The card layou
 
 Semantic HTML5 markup
 ```html
-<main>
-  <section class="container">
-    <article class="card">
-      <img class="card__image" src="images/image-qr-code.png" alt="qr-code">
-      <h1 class="card__heading">Improve your front-end skills by building projects</h1>
-      <p class="card__description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </article>
-  </section>
+<main class="container">
+  <div class="card">
+    <img class="card__image" src="images/image-qr-code.png" alt="qr-code">
+    <h1 class="card__heading">Improve your front-end skills by building projects</h1>
+    <p class="card__description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+   </div>
 </main>
 ```
 define variables

@@ -168,5 +168,6 @@ flexible responsive layout that I want to continue focusing on in future project
 ## Acknowledgments
 
 I have got some inspirations from:
-Jess Chan - [@TheCoderCoder](https://coder-coder.com/)
-freecodecamp - [https://www.freecodecamp.org](https://www.freecodecamp.org/)
+
+- Jess Chan - [@TheCoderCoder](https://coder-coder.com/)
+- freecodecamp - [https://www.freecodecamp.org](https://www.freecodecamp.org/)

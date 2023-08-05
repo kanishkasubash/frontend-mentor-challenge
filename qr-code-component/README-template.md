@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - QR Code Component Solution
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -22,22 +22,14 @@ This is my first Frontend Mentor challenge coded in HTML and CSS. The card layou
 ### Screenshot
 
 - Desktop view
-![](./screenshot/desktop-view.png)
+<img src="./screenshot/desktop-view.png" width="100%" height="100%"/>
 
 - Mobile view
-<img src="./screenshot/mobile-view.png" width="375" height="700"/>
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<img src="./screenshot/mobile-view.png" width="30%" height="30%"/>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/kanishkasubash/frontend-mentor-challenges/edit/main/qr-code-component](https://github.com/kanishkasubash/frontend-mentor-challenges/edit/main/qr-code-component/build)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -45,63 +37,136 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- [sass](https://sass-lang.com/) - Syntactically Awesome Style Sheets
+- [Node.js](https://nodejs.org/en) - JavaScript runtime
+- [Gulp.js](https://gulpjs.com/) - JavaScript toolkit
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
+Semantic HTML5 markup
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main>
+  <section class="container">
+    <article class="card">
+      <img class="card__image" src="images/image-qr-code.png" alt="qr-code">
+      <h1 class="card__heading">Improve your front-end skills by building projects</h1>
+      <p class="card__description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </article>
+  </section>
+</main>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+define variables
+```scss
+:root {
+    --font-outfit: 'Outfit', sans-serif;
+
+    --bg: hsl(212, 45%, 89%);
+    --bg-text: hsl(0, 0%, 7%);
+    --card-bg: hsl(0, 0%, 100%);    
+    --text-heading: hsl(218, 44%, 22%);
+    --text-paragraph: hsl(220, 15%, 55%);
+    --attribution: hsl(228, 45%, 44%);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function for convert pixels to rem
+```scss
+@use "sass:math";
+
+@function rem($pixels, $context: 16) {
+    @return (math.div($pixels, $context)) * 1rem;
 }
 ```
+base Style Sheet
+```scss
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-outfit);
+    background: var(--bg);
+    color: var(--bg-text);
+}
+footer {
+    padding: rem(25);
+}
+```
+typograpy Style Sheet
+```scss
+h1 {
+    margin-top: 0;
+    font-size: rem(20);
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+p {
+    font-size: rem(15);
+    font-weight: 400;
+    color: var(--text-paragraph);
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+```
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+```scss
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.card {
+    max-width: rem(320);
+    background-color: var(--card-bg);
+    border-radius: rem(15);
+    text-align: center;
+    &__image {
+        width: 90%;
+        border-radius: rem(10);
+        margin: 5%;
+    }
+
+    &__heading {
+        margin: 0 5%;
+        padding: 0 5%;
+    }
+
+    &__description {
+        margin: 5% 5% 13%;
+        padding: 0 5%;
+    }
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+flexible responsive layout that I want to continue focusing on in future projects. This technique I found useful that I want to refine and perfect.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) - The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Kanishka Priyashantha](https://github.com/kanishkasubash)
+- Frontend Mentor - [@kanishkasubash](https://www.frontendmentor.io/profile/kanishkasubash)
+- Linkedin - [Kanishka Priyashantha](https://www.linkedin.com/in/kanishka-priyashantha-ab55289b)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I have got some inspirations from:
+Jess Chan - [@TheCoderCoder](https://coder-coder.com/)
+freecodecamp - [https://www.freecodecamp.org](https://www.freecodecamp.org/)

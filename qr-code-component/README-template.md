@@ -15,9 +15,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+This is my first Frontend Mentor challenge coded in HTML and CSS. The card layout doesn't shift, so this is ideal for learning about building responsive layouts.
 
 ### Screenshot
 

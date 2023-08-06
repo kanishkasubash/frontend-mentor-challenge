@@ -169,8 +169,9 @@ flexible responsive layout that I want to continue focusing on in future project
 
 ## Acknowledgments
 
-I have got some inspirations from:
+I have got some inspirations & lot of helpfull tips from:
 
 - Jess Chan - [@TheCoderCoder](https://coder-coder.com/)
 - freecodecamp - [https://www.freecodecamp.org](https://www.freecodecamp.org/)
 - Aman Singh Bhogal - [https://www.frontendmentor.io/profile/asbhogal](https://www.frontendmentor.io/profile/asbhogal)
+- Kevin Powell - [https://www.youtube.com/@KevinPowell](https://www.youtube.com/@KevinPowell)

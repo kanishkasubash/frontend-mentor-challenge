@@ -55,8 +55,28 @@ Semantic HTML5 markup
    </div>
 </main>
 ```
+define font variables and mixin
+```scss
+$fonts: (
+  "OutfitRegular": "../assets/fonts/Outfit-Regular",
+  "OutfitBold": "../assets/fonts/Outfit-Bold" 
+);
+
+@mixin font($font-family, $font-file, $font-weight) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $font-weight;
+        font-style: normal;        
+        src: url(map-get($fonts, $font-file) + '.woff') format('woff'),
+            url(map-get($fonts, $font-file) + '.woff2') format('woff2');
+    }
+}
+```
 define variables
 ```scss
+@include font('Outfit', OutfitRegular, 400);
+@include font('Outfit', OutfitBold, 700);
+
 :root {
     --font-outfit: 'Outfit', sans-serif;
 
@@ -151,19 +171,23 @@ The Flexible Box Layout Module, makes it easier to design flexible responsive la
 
 ### Continued development
 
-flexible responsive layout that I want to continue focusing on in future projects. This technique I found useful that I want to refine and perfect.
+- flexible responsive layout that I want to continue focusing on in future projects.
+- Basics of how to self-host fonts.
+  
+  These techniques I found useful that I want to refine and perfect.
 
 ### Useful resources
 
+- [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
 - [When to use Flexbox and when to use CSS Grid](https://blog.logrocket.com/css-flexbox-vs-css-grid/#css-grid-layout-flexbox-alignment)
 - [Flexbox vs CSS Grid](https://www.youtube.com/watch?v=3elGSZSWTbM)
-- [Use fonts Locally](https://www.youtube.com/watch?v=zK-yy6C2Nck)
-- [Use fonts Locally](https://fontsource.org/fonts/outfit/install)
-- [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
+- [Self-hosting fonts (including Google fonts)](https://www.youtube.com/watch?v=zK-yy6C2Nck)
+- [Online @font-face generator](https://transfonter.org/)
+- [Use fontssource install fonts Locally](https://fontsource.org/fonts/outfit/install)- 
 
 ## Author
 
-- Website - [Kanishka Priyashantha](https://github.com/kanishkasubash)
+- Github - [Kanishka Priyashantha](https://github.com/kanishkasubash)
 - Frontend Mentor - [@kanishkasubash](https://www.frontendmentor.io/profile/kanishkasubash)
 - Linkedin - [Kanishka Priyashantha](https://www.linkedin.com/in/kanishka-priyashantha-ab55289b)
 

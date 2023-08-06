@@ -183,7 +183,7 @@ The Flexible Box Layout Module, makes it easier to design flexible responsive la
 - [Flexbox vs CSS Grid](https://www.youtube.com/watch?v=3elGSZSWTbM)
 - [Self-hosting fonts (including Google fonts)](https://www.youtube.com/watch?v=zK-yy6C2Nck)
 - [Online @font-face generator](https://transfonter.org/)
-- [Use fontssource install fonts Locally](https://fontsource.org/fonts/outfit/install)- 
+- [Use fontssource install fonts Locally](https://fontsource.org/fonts/outfit/install)
 
 ## Author
 

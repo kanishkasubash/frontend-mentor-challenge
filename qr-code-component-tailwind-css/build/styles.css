@@ -583,6 +583,18 @@ a {
   margin-bottom: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -609,6 +621,10 @@ a {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-\[0\.9375rem\] {
+  border-radius: 0.9375rem;
 }
 
 .bg-white-bg {

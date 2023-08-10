@@ -29,9 +29,11 @@ The challenge is to build out this Social Media Dashboard and get it looking as 
 
 - Mobile view - Dark
   <img src="./screenshots/Mobile-dark.png" width="30%" height="30%"/>
+  <img src="./screenshots/Mobile-dark-02.png" width="30%" height="30%"/>
 
 - Mobile view - Light
   <img src="./screenshots/Mobile-light.png" width="30%" height="30%"/>
+  <img src="./screenshots/Mobile-light-02.png" width="30%" height="30%"/>
 
 ### Links
 

@@ -1,93 +1,182 @@
-# Frontend Mentor - Social media dashboard with theme switcher
+# Frontend Mentor - QR Code Component Solution
 
-![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
+The challenge is to build out this Social Media Dashboard and get it looking as close to the design as possible. To do this challenge, I need a basic understanding of HTML, CSS and a tiny bit of JavaScript.
 
-## The challenge
+### Screenshot
 
-Your challenge is to build out this Social Media Dashboard and get it looking as close to the design as possible.
+- Desktop view - Dark
+  <img src="./screenshots/Desktop-dark.png" width="100%" height="100%"/>
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Desktop view - Light
+  <img src="./screenshots/Desktop-light.png" width="100%" height="100%"/>
 
-Your users should be able to:
+- Mobile view - Dark
+  <img src="./screenshots/Mobile-dark.png" width="30%" height="30%"/>
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Toggle color theme to their preference
+- Mobile view - Light
+  <img src="./screenshots/Mobile-light.png" width="30%" height="30%"/>
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Links
 
-## Where to find everything
+- Solution URL: [https://github.com/kanishkasubash/frontend-mentor-challenges/edit/main/social-media-dashboard](https://github.com/kanishkasubash/frontend-mentor-challenges/tree/main/social-media-dashboard/build)
+- Live Site URL: [https://kanishkasubash.github.io/social-media-dashboard/](https://kanishkasubash.github.io/social-media-dashboard/)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+## My process
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Built with
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Semantic HTML5 markup
+- [sass](https://sass-lang.com/) - Syntactically Awesome Style Sheets
+- [Node.js](https://nodejs.org/en) - JavaScript runtime
+- [Gulp.js](https://gulpjs.com/) - JavaScript toolkit - (Task Runner)
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### What I learned
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+Toggle Button HTML5 markup
 
-## Building your project
+```html
+<div class="header__toggle toggle">
+  <span class="toggle__label">Dark Mode</span>
+  <input type="checkbox" class="toggle__button" id="toggle" />
+  <label for="toggle" class="toggle__background">
+    <span class="toggle__slider"></span>
+  </label>
+</div>
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Toggle Button Style scss
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+```scss
+.toggle {
+    &__label {
+        font-size: rem(14);
+        font-weight: 700;
+        color: var(--dark-text);
+        margin-right: rem(13);
+    }
 
-## Deploying your project
+    &__button {
+        opacity: 0;
+        position: absolute;
+    }
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+    &__background {
+        background: linear-gradient(225deg, var(--toggle-start), var(--toggle-end));
+        width: rem(48);
+        height: rem(24);
+        border-radius: rem(12);
+        position: relative;
+        padding: rem(5);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+        &:hover {
+            background: linear-gradient(225deg, var(--toggle-bg-start), var(--toggle-bg-end));
+        }
+    }
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+    &__slider {
+        background-color: var(--toggle-slider);
+        width: rem(20);
+        height: rem(20);
+        position: absolute;
+        left: rem(2);
+        top: rem(2);
+        border-radius: 50%;
+        transition: 0.4s;
+    }
 
-## Create a custom `README.md`
+    #toggle:checked~.toggle__background {
+        background: linear-gradient(var(--toggle), var(--toggle));
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+        &:hover {
+            background: linear-gradient(225deg, var(--toggle-bg-start), var(--toggle-bg-end));
+        }
+    }
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+    #toggle:checked~.toggle__background .toggle__slider {
+        transform: translateX(rem(24));
+        background-color: var(--light-bg);
+    }
+}
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+Toggle Button JS
 
-## Submitting your solution
+```js
+const toggle = document.querySelector("#toggle");
+const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+const currentMode = localStorage.getItem("mode");
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+if (currentMode == "dark") {
+    document.body.classList.toggle("dark-mode");
+} else if (currentMode == "light") {
+    document.body.classList.toggle("light-mode");
+}
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+toggle.addEventListener("change", function () {
+    var mode;
+    if (prefersColorScheme.matches) {
+        document.body.classList.toggle("light-mode");
+        mode = document.body.classList.contains("light-mode")
+            ? "light"
+            : "dark";
+    } else {
+        document.body.classList.toggle("dark-mode");
+        mode = document.body.classList.contains("dark-mode")
+            ? "dark"
+            : "light";
+    }
+    localStorage.setItem("mode", mode);
+});
+```
 
-## Sharing your solution
+### Continued development
 
-There are multiple places you can share your solution:
+- React is one of the most widely used frontend libraries for building user interfaces. It follows a component-based architecture, making it efficient for creating reusable UI components. React's ecosystem is vast, with a rich selection of third-party libraries and tools. It's great for building interactive and dynamic single-page applications (SPAs).
+- Vite is a local development server written by Evan You and used by default by Vue and for React project templates. It has support for TypeScript and JSX.
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+  These techniques I found useful that I want to refine and perfect.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+### Useful resources
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
+- [When to use Flexbox and when to use CSS Grid](https://blog.logrocket.com/css-flexbox-vs-css-grid/#css-grid-layout-flexbox-alignment)
+- [Flexbox vs CSS Grid](https://www.youtube.com/watch?v=3elGSZSWTbM)
 
-## Got feedback for us?
+## Author
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- Github - [Kanishka Priyashantha](https://github.com/kanishkasubash)
+- Frontend Mentor - [@kanishkasubash](https://www.frontendmentor.io/profile/kanishkasubash)
+- Linkedin - [Kanishka Priyashantha](https://www.linkedin.com/in/kanishka-priyashantha-ab55289b)
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+## Acknowledgments
 
-**Have fun building!** 🚀
+I have got some inspirations & lot of helpfull tips from:
+
+- Jess Chan - [@TheCoderCoder](https://coder-coder.com/)
+- freecodecamp - [https://www.freecodecamp.org](https://www.freecodecamp.org/)
+- Aman Singh Bhogal - [https://www.frontendmentor.io/profile/asbhogal](https://www.frontendmentor.io/profile/asbhogal)
+- Kevin Powell - [https://www.youtube.com/@KevinPowell](https://www.youtube.com/@KevinPowell)

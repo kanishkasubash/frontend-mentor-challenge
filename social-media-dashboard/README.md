@@ -22,16 +22,20 @@ The challenge is to build out this Social Media Dashboard and get it looking as 
 ### Screenshot
 
 - Desktop view - Dark
+
   <img src="./screenshots/Desktop-dark.png" width="100%" height="100%"/>
 
 - Desktop view - Light
+
   <img src="./screenshots/Desktop-light.png" width="100%" height="100%"/>
 
 - Mobile view - Dark
+
   <img src="./screenshots/Mobile-dark.png" width="30%" height="30%"/>
   <img src="./screenshots/Mobile-dark-02.png" width="30%" height="30%"/>
 
 - Mobile view - Light
+
   <img src="./screenshots/Mobile-light.png" width="30%" height="30%"/>
   <img src="./screenshots/Mobile-light-02.png" width="30%" height="30%"/>
 

@@ -1,0 +1,29 @@
+**Hi! 👋, Frontend Friends.**
+
+I've just completed a front-end coding challenge. This is my solution for the **Social Media Dashboard with Theme Switcher**.
+
+**🛠️ Built With:**
+- Semantic HTML5 markup
+- SASS/SCSS
+- Node.JS
+- GULP.JS
+- Vanilla JS
+- Mobile First Approach
+
+**📦Features:**
+- The user indicates their preference through an operating system setting (e.g. light or dark mode) or a user agent setting.
+- Responsiveness (Mobile/Tab/Laptop/Desktop).
+- Toggle button for custom Theme Change.
+- Hover Effects
+- Animations
+
+**🔖What I am learned:**
+- Level Up SCSS & JS
+- Toggling Button
+- `prefers-color-scheme`. [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+- Window: localStorage property. [Link](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- CSS **Flexbox** & **Grid**. [Link](https://blog.logrocket.com/css-flexbox-vs-css-grid/#css-grid-layout-flexbox-alignment)
+
+**💡Any suggestions on how I can improve are welcome!**
+
+😊I'll be happy to hear any feedback and advice! Thank you.

@@ -62,7 +62,7 @@ Toggle Button HTML5 markup
 
 ```html
 <div class="header__toggle toggle">
-  <span class="toggle__label">Dark Mode</span>
+  <label for="toggle" class="toggle__label">Dark Mode</label>
   <input type="checkbox" class="toggle__button" id="toggle" />
   <label for="toggle" class="toggle__background">
     <span class="toggle__slider"></span>

@@ -9,7 +9,7 @@
 body {
     background: #edf2f8;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1.7;
 }
 
@@ -27,7 +27,6 @@ body {
     border-radius: 10px;
     padding: 30px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    margin-bottom: 10px;
 }
 
 .card__header {
@@ -37,7 +36,7 @@ body {
 }
 
 .card__header h3 {
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .card__header p {
@@ -60,7 +59,7 @@ body {
 }
 
 .card__quote {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
     line-height: 1.4;
     opacity: 70%;

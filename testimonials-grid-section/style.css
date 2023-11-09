@@ -65,7 +65,7 @@ body {
     opacity: 70%;
 }
 
-.card--bg-purple {
+.card--bg-violet {
     background: hsl(263, 55%, 52%);
     color: #fff;
     background-image: url(./images/bg-pattern-quotation.svg);

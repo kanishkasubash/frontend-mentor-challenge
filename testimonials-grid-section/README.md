@@ -55,7 +55,7 @@ The :nth-of-type() selector in CSS is a pseudo-class that allows you to select a
       <header class="card__header">
         <img src="images/image-daniel.jpg" alt="Daniel Clifford" class="card__img">
         <div>
-          <h3>Daniel Clifford</h3>
+          <h1>Daniel Clifford</h1>
           <p>Verified Graduate</p>
         </div>
       </header>
@@ -92,7 +92,7 @@ The :nth-of-type() selector in CSS is a pseudo-class that allows you to select a
     margin-bottom: 10px;
 }
 
-.card__header h3 {
+.card__header h1 {
     font-size: 0.9375rem;
 }
 

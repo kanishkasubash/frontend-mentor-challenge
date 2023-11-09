@@ -176,7 +176,8 @@ toggle.addEventListener("change", function () {
 
 - Github - [Kanishka Priyashantha](https://github.com/kanishkasubash)
 - Frontend Mentor - [@kanishkasubash](https://www.frontendmentor.io/profile/kanishkasubash)
-- Linkedin - [Kanishka Priyashantha](https://www.linkedin.com/in/kanishka-priyashantha-ab55289b)
+- Linkedin - [Kanishka Priyashantha](https://www.linkedin.com/in/kanishkasubash)
+- Twitter - [@kanishkasubash](https://twitter.com/kanishkasubash)
 
 ## Acknowledgments
 

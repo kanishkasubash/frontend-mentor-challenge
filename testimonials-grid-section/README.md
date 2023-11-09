@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
 - Desktop view
-<img src="./screenshot.png" width="100%" height="100%"/>
+<img src="./Screenshot.png" width="100%" height="100%"/>
 
 ### Links
 

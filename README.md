@@ -9,3 +9,7 @@ This is my first project in Frontend Mentor challenges. A perfect biginner chall
 ## [02. Social Media Dashboard with Theme Switcher](https://github.com/kanishkasubash/frontend-mentor-challenges/tree/main/social-media-dashboard)
 
 My challenge is to build out this Social Media Dashboard and get it looking as close to the design as possible. To do this challenge, I need a basic understanding of HTML, CSS and a tiny bit of JavaScript.
+
+## [03. Testimonials Grid Section](https://github.com/kanishkasubash/frontend-mentor-challenges/tree/main/testimonials-grid-section)
+
+This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!

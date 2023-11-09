@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/kanishkasubash/frontend-mentor-challenges/tree/main/testimonials-grid-section](https://github.com/kanishkasubash/frontend-mentor-challenges/tree/main/testimonials-grid-section)
+- Live Site URL: [https://kanishkasubash.github.io/testimonials-grid-section/](https://kanishkasubash.github.io/testimonials-grid-section/)
 
 ## My process
 
